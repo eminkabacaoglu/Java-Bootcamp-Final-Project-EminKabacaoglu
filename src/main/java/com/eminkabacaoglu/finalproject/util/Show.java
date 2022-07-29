@@ -1,12 +1,12 @@
-package util;
+package com.eminkabacaoglu.finalproject.util;
 
-import chart.BarChart;
-import chart.LineChart;
-import chart.PieChart;
-import chart.TableChart;
-import model.AgencyPerformance;
-import model.Policy;
-import service.CustomerPolicyService;
+import com.eminkabacaoglu.finalproject.chart.BarChart;
+import com.eminkabacaoglu.finalproject.chart.LineChart;
+import com.eminkabacaoglu.finalproject.chart.PieChart;
+import com.eminkabacaoglu.finalproject.chart.TableChart;
+import com.eminkabacaoglu.finalproject.model.AgencyPerformance;
+import com.eminkabacaoglu.finalproject.model.Policy;
+import com.eminkabacaoglu.finalproject.service.CustomerPolicyService;
 
 import java.util.LinkedHashMap;
 import java.util.List;

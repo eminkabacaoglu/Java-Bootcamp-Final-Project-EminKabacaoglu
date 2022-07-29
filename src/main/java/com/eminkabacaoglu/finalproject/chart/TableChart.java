@@ -1,6 +1,6 @@
-package chart;
+package com.eminkabacaoglu.finalproject.chart;
 
-import model.AgencyPerformance;
+import com.eminkabacaoglu.finalproject.model.AgencyPerformance;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;

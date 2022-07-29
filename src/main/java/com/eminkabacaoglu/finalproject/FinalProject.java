@@ -1,4 +1,6 @@
-import util.Responder;
+package com.eminkabacaoglu.finalproject;
+
+import com.eminkabacaoglu.finalproject.util.Responder;
 
 import java.util.Scanner;
 

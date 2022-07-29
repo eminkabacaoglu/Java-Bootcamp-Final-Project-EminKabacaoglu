@@ -1,4 +1,4 @@
-package chart;
+package com.eminkabacaoglu.finalproject.chart;
 
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;
@@ -22,11 +22,11 @@ public class LineChart extends Chart{
                 line_chart_dataset, PlotOrientation.VERTICAL,
                 true,true,false);
 
-        //saving chart as image
+        //saving com.eminkabacaoglu.finalproject.chart as image
         String pathName="Total Payments By Year LineChart.jpeg";
         saveAsImage(pathName,lineChartObject);
 
-        //showing chart on Jframe
+        //showing com.eminkabacaoglu.finalproject.chart on Jframe
         showFrame(lineChartObject);
     }
 }

@@ -1,10 +1,10 @@
-import model.Policy;
+import com.eminkabacaoglu.finalproject.model.Policy;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import service.CustomerPolicyService;
+import com.eminkabacaoglu.finalproject.service.CustomerPolicyService;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;

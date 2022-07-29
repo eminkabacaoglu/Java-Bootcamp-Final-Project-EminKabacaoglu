@@ -1,6 +1,6 @@
-package chart;
+package com.eminkabacaoglu.finalproject.chart;
 
-import model.Policy;
+import com.eminkabacaoglu.finalproject.model.Policy;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PlotOrientation;
@@ -23,10 +23,10 @@ public class BarChart extends Chart{
                 dataset, PlotOrientation.VERTICAL,
                 true, true, false);
 
-        //saving chart as image
+        //saving com.eminkabacaoglu.finalproject.chart as image
         String pathName="Total Policy Amount BarChart.jpeg";
         saveAsImage(pathName,barChart);
-        //showing chart on Jframe
+        //showing com.eminkabacaoglu.finalproject.chart on Jframe
         showFrame(barChart);
 
 

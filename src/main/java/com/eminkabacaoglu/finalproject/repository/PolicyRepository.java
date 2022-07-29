@@ -1,19 +1,14 @@
-package repository;
+package com.eminkabacaoglu.finalproject.repository;
 
-import model.Agency;
-import model.Policy;
+import com.eminkabacaoglu.finalproject.model.Policy;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.util.ArrayList;
-import java.util.List;
-
 @Repository
-public class AgencyRepository {
+public class PolicyRepository {
+
 
     private SessionFactory sessionFactory;
 
@@ -21,22 +16,23 @@ public class AgencyRepository {
     public void setSessionFactory(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
+    public PolicyRepository() {
 
-    public AgencyRepository() {
 
     }
 
 
-    public Agency getAgency(long id){
+    public Policy getPolicy(long id){
 
         Session session = this.sessionFactory.openSession();
 
         try{
-            Agency agency = session.get(Agency.class, id);
-            if (agency != null) {
-                return agency;
+            Policy policy = session.get(Policy.class, id);
+            if (policy != null) {
+                return policy;
             }
         }
+
         catch(Exception e){
             e.printStackTrace();
             throw new RuntimeException(e.getMessage());

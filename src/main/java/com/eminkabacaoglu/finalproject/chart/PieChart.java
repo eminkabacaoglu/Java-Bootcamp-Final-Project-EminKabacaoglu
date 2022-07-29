@@ -1,4 +1,4 @@
-package chart;
+package com.eminkabacaoglu.finalproject.chart;
 
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;
@@ -14,17 +14,17 @@ public class PieChart extends Chart{
         }
 
         JFreeChart pChart = ChartFactory.createPieChart(
-                "Total Policiy Quantity By City ("+getReprtingDate()+")",   // chart title
+                "Total Policiy Quantity By City ("+getReprtingDate()+")",   // com.eminkabacaoglu.finalproject.chart title
                 pie_char_dataset,          // data
                 true,             // include legend
                 true,
                 false);
 
-        //saving chart as image
+        //saving com.eminkabacaoglu.finalproject.chart as image
         String pathName="Total Quantity Of Policies By City PieChart.jpeg";
         saveAsImage(pathName,pChart);
 
-        //showing chart on Jframe
+        //showing com.eminkabacaoglu.finalproject.chart on Jframe
         showFrame(pChart);
 
     }

@@ -1,4 +1,4 @@
-package model;
+package com.eminkabacaoglu.finalproject.model;
 import lombok.*;
 
 import javax.persistence.*;

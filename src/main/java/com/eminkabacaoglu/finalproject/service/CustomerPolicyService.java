@@ -1,12 +1,12 @@
-package service;
+package com.eminkabacaoglu.finalproject.service;
 
 
 
 import lombok.Data;
-import model.AgencyPerformance;
-import model.Policy;
+import com.eminkabacaoglu.finalproject.model.AgencyPerformance;
+import com.eminkabacaoglu.finalproject.model.Policy;
 import org.springframework.stereotype.Service;
-import repository.CustomerPolicyRepository;
+import com.eminkabacaoglu.finalproject.repository.CustomerPolicyRepository;
 
 import java.util.LinkedHashMap;
 import java.util.List;

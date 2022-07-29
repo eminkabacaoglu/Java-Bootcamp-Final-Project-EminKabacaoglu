@@ -1,9 +1,9 @@
-package repository;
+package com.eminkabacaoglu.finalproject.repository;
 
-import model.Agency;
-import model.AgencyPerformance;
-import model.CustomerPolicy;
-import model.Policy;
+import com.eminkabacaoglu.finalproject.model.Agency;
+import com.eminkabacaoglu.finalproject.model.AgencyPerformance;
+import com.eminkabacaoglu.finalproject.model.CustomerPolicy;
+import com.eminkabacaoglu.finalproject.model.Policy;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;

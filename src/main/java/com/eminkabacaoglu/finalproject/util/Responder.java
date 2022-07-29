@@ -1,8 +1,8 @@
-package util;
+package com.eminkabacaoglu.finalproject.util;
 
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import service.CustomerPolicyService;
+import com.eminkabacaoglu.finalproject.service.CustomerPolicyService;
 
 public class Responder {
     Show show = new Show();
