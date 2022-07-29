@@ -16,7 +16,7 @@ public class Payment {
     @Column(name="id")
     private long id;
 
-    @OneToOne(targetEntity=CustomerPolicy.class)
+    @ManyToOne(targetEntity=CustomerPolicy.class)
     @JoinColumn(name="customer_policy_id")
     private CustomerPolicy customer;
 
