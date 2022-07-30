@@ -22,12 +22,6 @@ public class CustomerPolicyServiceTest {
         customerPolicyService = ctx.getBean(CustomerPolicyService.class);
     }
 
-    @Test
-    public void test_getPaymentByYear(){
-
-        int actualResult=customerPolicyService.getPaymentByYear().size();
-        assertThat(actualResult).isEqualTo(13);
-    }
 
     @Test
     public void test_getAgencyPerformanceInfos(){

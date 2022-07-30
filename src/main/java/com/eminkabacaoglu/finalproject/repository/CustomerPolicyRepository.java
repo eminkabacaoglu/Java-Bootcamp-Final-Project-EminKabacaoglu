@@ -80,31 +80,7 @@ public class CustomerPolicyRepository {
         return policyAmounts;
     }
 
-    //Returns year and total payments of every year
-    public LinkedHashMap<String,Double> paymentsByYear() {
 
-        LinkedHashMap<String,Double> policyPayments= new LinkedHashMap<>();
-        try{
-            Session session = this.sessionFactory.openSession();
-            String hql = "select extract(year from p.date) as year,sum(p.payment_amount) as amount from Payment as p group by year order by year";
-            List<Object> list = session.createQuery(hql).getResultList();
-
-            for(int i=0; i<list.size(); i++){
-                Object[] row = (Object[]) list.get(i);
-                // first value (0. index) represents year
-                String year=row[0].toString();
-                // second value (1. index) represents total payment
-                double payment = (double) row[1];
-                policyPayments.put(year,payment);
-            }
-
-        }catch(Exception e){
-            e.printStackTrace();
-            throw new RuntimeException(e.getMessage());
-        }
-
-        return policyPayments;
-    }
 
     //Returns city name and quantity of policies: to find quantity of total policies for every unique city of agencies
     public LinkedHashMap<String,Integer> quantityOfPoliciesByCity() {

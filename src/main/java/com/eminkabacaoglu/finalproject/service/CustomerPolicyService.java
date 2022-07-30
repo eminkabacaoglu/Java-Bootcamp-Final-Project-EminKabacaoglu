@@ -23,9 +23,7 @@ public class CustomerPolicyService {
         return this.customerPolicyRepository.policyAmountByPolicyType();
     }
 
-    public LinkedHashMap<String,Double> getPaymentByYear(){
-        return this.customerPolicyRepository.paymentsByYear();
-    }
+
 
     public LinkedHashMap<String,Integer> getQuantityOfPoliciesByCity(){
         return this.customerPolicyRepository.quantityOfPoliciesByCity();

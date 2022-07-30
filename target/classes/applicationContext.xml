@@ -7,20 +7,28 @@
         http://www.springframework.org/schema/context
         https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="customerPolicyRepository" class="repository.CustomerPolicyRepository">
+    <bean id="customerPolicyRepository" class="com.eminkabacaoglu.finalproject.repository.CustomerPolicyRepository">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 
-    <bean id="customerPolicyService" class="service.CustomerPolicyService">
+    <bean id="customerPolicyService" class="com.eminkabacaoglu.finalproject.service.CustomerPolicyService">
         <property name="customerPolicyRepository" ref="customerPolicyRepository"/>
     </bean>
 
-    <bean id="policyRepository" class="repository.PolicyRepository">
+    <bean id="paymentRepository" class="com.eminkabacaoglu.finalproject.repository.PaymentRepository">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="paymentService" class="com.eminkabacaoglu.finalproject.service.PaymentService">
+        <property name="paymentRepository" ref="paymentRepository"/>
+    </bean>
+
+    <bean id="policyRepository" class="com.eminkabacaoglu.finalproject.repository.PolicyRepository">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 
 
-    <bean id="agencyRepository" class="repository.AgencyRepository">
+    <bean id="agencyRepository" class="com.eminkabacaoglu.finalproject.repository.AgencyRepository">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 
@@ -36,7 +44,7 @@
         <property name="dataSource" ref="dataSource"/>
         <property name="packagesToScan">
             <array>
-                <value>model</value>
+                <value>com.eminkabacaoglu.finalproject.model</value>
             </array>
         </property>
         <property name="hibernateProperties">

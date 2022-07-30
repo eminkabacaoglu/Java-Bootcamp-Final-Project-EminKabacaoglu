@@ -15,6 +15,14 @@
         <property name="customerPolicyRepository" ref="customerPolicyRepository"/>
     </bean>
 
+    <bean id="paymentRepository" class="com.eminkabacaoglu.finalproject.repository.PaymentRepository">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="paymentService" class="com.eminkabacaoglu.finalproject.service.PaymentService">
+        <property name="paymentRepository" ref="paymentRepository"/>
+    </bean>
+
     <bean id="policyRepository" class="com.eminkabacaoglu.finalproject.repository.PolicyRepository">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>

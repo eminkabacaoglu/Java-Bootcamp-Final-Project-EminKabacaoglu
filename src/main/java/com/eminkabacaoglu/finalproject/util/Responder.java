@@ -1,5 +1,6 @@
 package com.eminkabacaoglu.finalproject.util;
 
+import com.eminkabacaoglu.finalproject.service.PaymentService;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.eminkabacaoglu.finalproject.service.CustomerPolicyService;
@@ -27,8 +28,8 @@ public class Responder {
         else if(response.equalsIgnoreCase("2")){
             try {
                 ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
-                CustomerPolicyService custService = ctx.getBean(CustomerPolicyService.class);
-                this.show.showPaymentsByYear(custService.getPaymentByYear());
+                PaymentService payService = ctx.getBean(PaymentService.class);
+                this.show.showPaymentsByYear(payService.getPaymentByYear());
 
             } catch (Exception e) {
                 e.printStackTrace();
