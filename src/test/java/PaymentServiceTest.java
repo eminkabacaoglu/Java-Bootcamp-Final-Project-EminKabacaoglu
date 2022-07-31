@@ -1,11 +1,14 @@
 import com.eminkabacaoglu.finalproject.service.PaymentService;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+@RunWith(SpringRunner.class)
 public class PaymentServiceTest {
 
     private PaymentService paymentService;

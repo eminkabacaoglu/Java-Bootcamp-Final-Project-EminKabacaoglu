@@ -1,17 +1,18 @@
 import com.eminkabacaoglu.finalproject.model.Policy;
+import com.eminkabacaoglu.finalproject.service.CustomerPolicyService;
 import org.junit.Before;
 import org.junit.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.junit.runner.RunWith;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import com.eminkabacaoglu.finalproject.service.CustomerPolicyService;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@SpringBootTest
+@RunWith(SpringRunner.class)
 public class CustomerPolicyServiceTest {
 
     private CustomerPolicyService customerPolicyService;
